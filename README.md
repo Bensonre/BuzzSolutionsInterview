@@ -6,18 +6,24 @@ The following info is required for posts
 ## Test It
 Currently running at https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolutionsInterview/Resume with an API key required.
 I have created one public key for Interviewer use: `PLujDP8faG93WdJcNlX1h63blWcLPDG73sHtlpCM`.
-curls:
-Read All
+### Curls:
+
+**Read All**
+
 `
 curl --location 'https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolutionsInterview/Resume' \
 --header 'x-api-key: PLujDP8faG93WdJcNlX1h63blWcLPDG73sHtlpCM'
 `
-Read 1
+
+**Read 1**
+
 `
 curl --location 'https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolutionsInterview/Resume/1' \
 --header 'x-api-key: PLujDP8faG93WdJcNlX1h63blWcLPDG73sHtlpCM'
 `
-Create
+
+**Create**
+
 `
 curl --location 'https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolutionsInterview/Resume/' \
 --header 'Content-Type: application/json' \
@@ -57,7 +63,9 @@ curl --location 'https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolu
     }
 }'
 `
-Update
+
+**Update**
+
 `
 curl --location 'https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolutionsInterview/Resume/5' \
 --header 'Content-Type: application/json' \
@@ -97,7 +105,9 @@ curl --location 'https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolu
     }
 }'
 `
-Delete
+
+**Delete**
+
 `
 curl --location --request DELETE 'https://mfi4hzvye4.execute-api.us-east-1.amazonaws.com/BuzzSolutionsInterview/Resume/5' \
 --header 'x-api-key: PLujDP8faG93WdJcNlX1h63blWcLPDG73sHtlpCM'
